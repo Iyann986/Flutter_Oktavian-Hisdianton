@@ -1,0 +1,9 @@
+# summary
+
+## Basic version and branch management Git
+
+Basic version and branch management dalam Git adalah cara untuk mengelola kode sumber dalam sebuah proyek perangkat lunak yang melibatkan banyak pengembang atau tim. Git adalah salah satu sistem kontrol versi yang paling populer dan digunakan secara luas untuk mengelola kode sumber. Versi dasar Git terdiri dari tiga bagian: working directory, staging area, dan repository. Working directory adalah tempat di mana kode sumber proyek ditempatkan dan diedit. Staging area adalah area persiapan di mana pengguna dapat menentukan perubahan mana yang akan disimpan dalam versi berikutnya. Repository adalah area penyimpanan permanen di mana semua versi proyek disimpan.
+
+Git juga memiliki fitur branch management, yang memungkinkan pengguna untuk membuat cabang (branch) yang berbeda dari kode sumber utama. Ini memungkinkan pengembang untuk membuat perubahan baru tanpa mengganggu kode sumber utama dan untuk bekerja secara paralel pada fitur baru atau perbaikan bug. Setelah cabang selesai dikembangkan dan diuji, perubahan dapat digabungkan (merge) ke kode sumber utama.
+
+Dalam branch management, ada beberapa istilah penting yang harus dipahami, seperti checkout, branch, commit, merge, dan conflict resolution. Checkout digunakan untuk memilih cabang yang ingin dikerjakan, branch adalah salinan kode sumber yang terpisah dari kode sumber utama, commit digunakan untuk menyimpan perubahan pada kode sumber, merge digunakan untuk menggabungkan perubahan dari cabang yang berbeda, dan conflict resolution digunakan untuk menyelesaikan masalah yang terjadi ketika terdapat konflik pada kode sumber yang diubah oleh pengembang yang berbeda. Dengan menggunakan Git dan basic version and branch management, pengembang dapat mengelola kode sumber proyek dengan lebih mudah dan efektif, memungkinkan mereka untuk mengembangkan, menguji, dan menggabungkan perubahan secara efisien dan terorganisir.
