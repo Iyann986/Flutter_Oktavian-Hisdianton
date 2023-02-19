@@ -11,3 +11,7 @@
 
 ## Soal Prioritas 2
 
+![Struktur Folder](./../screenshots/macam-macam-branch.png). 
+
+![Struktur Folder](./../screenshots/Graph.png). 
+
