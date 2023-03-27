@@ -51,34 +51,6 @@ class _GalleryPageState extends State<GalleryPage> {
         });
   }
 
-  // void _showBottomSheet(String imageUrl) {
-  //   showModalBottomSheet(
-  //       context: context,
-  //       builder: (BuildContext context) {
-  //         return Container(
-  //           height: 300,
-  //           child: Center(
-  //             child: Column(
-  //               mainAxisAlignment: MainAxisAlignment.center,
-  //               mainAxisSize: MainAxisSize.min,
-  //               children: [
-  //                 Image.network(imageUrl),
-  //                 SizedBox(height: 16),
-  //                 ElevatedButton(
-  //                   onPressed: () {
-  //                     Navigator.pop(context);
-  //                     Navigator.pushNamed(context, '/fullScreenImage',
-  //                         arguments: {'imageUrl': imageUrl});
-  //                   },
-  //                   child: Text('View Full Size'),
-  //                 )
-  //               ],
-  //             ),
-  //           ),
-  //         );
-  //       });
-  // }
-
   void _showDialog(String imageUrl) async {
     bool result = await showDialog(
         context: context,
@@ -101,32 +73,6 @@ class _GalleryPageState extends State<GalleryPage> {
       Navigator.pushNamed(context, '/gallery', arguments: imageUrl);
     }
   }
-
-  // void _showDialog(String imageUrl) async {
-  //   bool result = await showDialog(
-  //       context: context,
-  //       builder: (BuildContext context) {
-  //         return AlertDialog(
-  //           title: Text('View Full Size'),
-  //           content: Image.network(imageUrl),
-  //           actions: [
-  //             TextButton(
-  //                 onPressed: () => Navigator.pop(context, false),
-  //                 child: Text('No')),
-  //             TextButton(
-  //                 onPressed: () => Navigator.pop(context, true),
-  //                 child: Text('Yes')),
-  //           ],
-  //         );
-  //       });
-
-  //   if (result == true) {
-  //     Navigator.push(
-  //         context,
-  //         MaterialPageRoute(
-  //             builder: (BuildContext context) => FullScreenImage()));
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {

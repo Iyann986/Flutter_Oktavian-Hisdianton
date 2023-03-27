@@ -10,7 +10,6 @@ class AdvanceFormContact extends StatefulWidget {
   const AdvanceFormContact({super.key});
 
   @override
-  // State<ChatGptFormState> createState() => _ChatGptFormState();
   State<AdvanceFormContact> createState() => _AdvanceFormContactState();
 }
 
@@ -136,21 +135,6 @@ class _AdvanceFormContactState extends State<AdvanceFormContact> {
     }
     return '*/*';
   }
-
-  // // method untuk menampilkan file picker
-  // Future<void> _selectFile(BuildContext context) async {
-  //   final pickedFile =
-  //       await ImagePicker().getImage(source: ImageSource.gallery);
-  //   if (pickedFile != null) {
-  //     setState(() {
-  //       file = File(pickedFile.path);
-  //     });
-  //   }
-  // }
-
-  // void _openFile(PlatformFile file) {
-  //   OpenFile.open(file.path);
-  // }
 
   @override
   Widget build(BuildContext context) {
