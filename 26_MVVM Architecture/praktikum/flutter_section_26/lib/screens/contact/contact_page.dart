@@ -15,7 +15,7 @@ class _ContactPageState extends State<ContactPage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Provider.of<ContactViewModel>(context, listen: false).getAllContacts();
     });
   }

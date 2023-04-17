@@ -15,7 +15,7 @@ class _FoodPageState extends State<FoodPage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Provider.of<FoodViewModel>(context, listen: false).getAllFoods();
     });
   }
