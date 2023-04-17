@@ -33,8 +33,6 @@ Kemudian, contoh alur pergantian antar *state* ketika suatu proses gagal adalah 
 3. `ERROR` kembali menjadi `IDLE`.
 
 
-
-
 ### Implementasi pada View-Model
 
 Salah satu penerapan *Finite State Machine* adalah pada *View-Model* arsitektur MVVM yang ditunjukkan dengan beberapa cara sebagai berikut.
