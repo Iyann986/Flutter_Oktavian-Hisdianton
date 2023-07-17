@@ -61,6 +61,7 @@ class _CreateContactState extends State<CreateContact> {
                       if (value!.isEmpty || value == '') {
                         return "Nama harus diisi oleh user.";
                       }
+                      return null;
                     },
                     controller: contactName,
                     decoration: const InputDecoration(
@@ -96,6 +97,7 @@ class _CreateContactState extends State<CreateContact> {
                       if (value!.isEmpty || value == '') {
                         return "Nomor telepon harus diisi oleh user.";
                       }
+                      return null;
                     },
                     keyboardType: TextInputType.number,
                     maxLength: 13,

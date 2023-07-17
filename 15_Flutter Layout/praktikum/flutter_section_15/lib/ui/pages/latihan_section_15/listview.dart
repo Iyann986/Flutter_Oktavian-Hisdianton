@@ -27,7 +27,7 @@ class _ListViewAppState extends State<ListViewApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('JSON ListView in Flutter'),
+        title: const Text('JSON ListView in Flutter'),
       ),
       body: ListView.builder(
         itemCount: data.length,
@@ -35,15 +35,15 @@ class _ListViewAppState extends State<ListViewApp> {
           return ListTile(
             leading: CircleAvatar(
               radius: 28,
+              backgroundColor: Colors.green,
               child: Text(
                 data[index]['username']![0],
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
-              backgroundColor: Colors.green,
             ),
             title: Text(data[index]['username']!),
             subtitle: Text(data[index]['phone']!),

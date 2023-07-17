@@ -13,7 +13,9 @@ class FPB {
 }
 
 class Matematika implements KPK, FPB {
+  @override
   int x;
+  @override
   int y;
 
   Matematika(this.x, this.y);

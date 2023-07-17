@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_section_13/ui/pages/material_page.dart';
 import 'package:flutter_section_13/ui/pages/soal_eksplorasi.dart';
 
 class MainApp extends StatelessWidget {

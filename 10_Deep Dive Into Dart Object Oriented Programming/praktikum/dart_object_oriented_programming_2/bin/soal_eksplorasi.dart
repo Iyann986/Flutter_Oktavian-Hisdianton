@@ -8,10 +8,12 @@ class Circle implements Shape {
 
   Circle(this.r);
 
+  @override
   int getArea() {
     return (3.14 * r * r).round(); // rumus luas lingkaran
   }
 
+  @override
   int getPerimeter() {
     return (2 * 3.14 * r).round(); // rumus keliling lingkaran
   }
@@ -22,10 +24,12 @@ class Square implements Shape {
 
   Square(this.sisi);
 
+  @override
   int getArea() {
     return sisi * sisi; // rumus luas persegi
   }
 
+  @override
   int getPerimeter() {
     return 4 * sisi; // rumus keliling persegi
   }
@@ -37,10 +41,12 @@ class Rectangle implements Shape {
 
   Rectangle(this.panjang, this.lebar);
 
+  @override
   int getArea() {
     return panjang * lebar; // rumus luas PersegiPanjang
   }
 
+  @override
   int getPerimeter() {
     return 2 * (panjang + lebar); // rumus keliling PersegiPanjang
   }

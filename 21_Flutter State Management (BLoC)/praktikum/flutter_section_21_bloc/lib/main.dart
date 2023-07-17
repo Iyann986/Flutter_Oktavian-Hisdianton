@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         routes: {
-          '/': (context) => HomeContact(),
-          '/createContact': (context) => ContactCreate(),
+          '/': (context) => const HomeContact(),
+          '/createContact': (context) => const ContactCreate(),
         },
       ),
     );

@@ -70,11 +70,11 @@ class _HomePageState extends State<HomePage> {
                   height: 300,
                   color: Colors.transparent,
                 ),
-                Container(
+                const SizedBox(
                   width: double.infinity,
                   child: Center(
                     child: Column(
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           'CONTACT US',
                           style: TextStyle(
@@ -298,12 +298,9 @@ class _HomePageState extends State<HomePage> {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
-                                Text("Full Name: " +
-                                    firstNameController.text +
-                                    " " +
-                                    lastNameController.text),
-                                Text("Email: " + emailController.text),
-                                Text("Message: " + messageController.text),
+                                Text("Full Name: ${firstNameController.text} ${lastNameController.text}"),
+                                Text("Email: ${emailController.text}"),
+                                Text("Message: ${messageController.text}"),
                               ],
                             ),
                             actions: [
@@ -318,7 +315,6 @@ class _HomePageState extends State<HomePage> {
                         },
                       );
                     },
-                    child: const Text('Submit'),
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white,
                       backgroundColor: const Color(0xff473DD5),
@@ -335,6 +331,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       alignment: Alignment.center,
                     ),
+                    child: const Text('Submit'),
                   ),
                 ),
               ],

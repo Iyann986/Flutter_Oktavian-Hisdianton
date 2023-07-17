@@ -9,9 +9,9 @@ void main() {
 
   // Mengonversi list menjadi map
   Map<String, String> mapDataList = {};
-  dataDiri.forEach((item) {
+  for (var item in dataDiri) {
     mapDataList[item[0]] = item[1];
-  });
+  }
 
   // Menampilkan map
   print(

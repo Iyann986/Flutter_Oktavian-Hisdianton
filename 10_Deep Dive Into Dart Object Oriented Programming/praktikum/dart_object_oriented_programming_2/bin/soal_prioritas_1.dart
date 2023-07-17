@@ -18,8 +18,11 @@ class Kubus extends BangunRuang {
 }
 
 class Balok extends BangunRuang {
+  @override
   double panjang;
+  @override
   double lebar;
+  @override
   double tinggi;
 
   Balok(this.panjang, this.lebar, this.tinggi);

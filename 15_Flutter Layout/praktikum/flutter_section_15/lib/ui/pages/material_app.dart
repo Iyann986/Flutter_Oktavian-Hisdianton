@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_section_15/ui/pages/material_page.dart';
-import 'package:flutter_section_15/ui/pages/soal_eksplorasi.dart';
 
 import 'latihan_section_15/gridview.dart';
-import 'latihan_section_15/listview.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

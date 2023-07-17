@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const FormContactPage(),
         '/gallery': (context) => const GalleryPage(),
-        '/fullScreenImage': (context) => FullScreenImage(),
+        '/fullScreenImage': (context) => const FullScreenImage(),
       },
     );
   }

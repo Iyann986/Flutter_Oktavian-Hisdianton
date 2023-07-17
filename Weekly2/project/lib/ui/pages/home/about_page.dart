@@ -60,10 +60,10 @@ class _AboutUsPageState extends State<AboutUsPage> {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.only(top: 20),
-              child: Center(
+              child: const Center(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Text(
                       'Hallo',
                       style: TextStyle(

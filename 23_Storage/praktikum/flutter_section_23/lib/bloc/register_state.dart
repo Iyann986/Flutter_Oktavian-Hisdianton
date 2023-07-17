@@ -16,7 +16,7 @@ class RegisterSuccess extends RegisterState {
   final bool? isLogin;
   final bool? statusAction;
 
-  RegisterSuccess({
+  const RegisterSuccess({
     this.account,
     this.isLogin,
     this.statusAction,

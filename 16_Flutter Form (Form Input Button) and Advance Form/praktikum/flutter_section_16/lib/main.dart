@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'advance_from/soal_prioritas_1.dart';
 import 'advance_from/soal_prioritas_2.dart';
-import 'form/pages/home_contact.dart';
 
 void main() {
   runApp(const MyApp());

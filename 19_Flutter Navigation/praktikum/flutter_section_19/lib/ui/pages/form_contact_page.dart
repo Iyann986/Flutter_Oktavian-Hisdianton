@@ -229,7 +229,7 @@ class _FormContactPageState extends State<FormContactPage> {
                         borderRadius: BorderRadius.circular(5),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Pindah Halaman Baru',
                       style: TextStyle(
                         color: Colors.white,
@@ -237,7 +237,7 @@ class _FormContactPageState extends State<FormContactPage> {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => GalleryPage()));
+                          builder: (context) => const GalleryPage()));
                     },
                   ),
                 ],

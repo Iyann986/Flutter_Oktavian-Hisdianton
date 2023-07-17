@@ -17,10 +17,10 @@ class HomeContact extends StatelessWidget {
         centerTitle: true,
       ),
       body: (contactProvider.contact.isEmpty)
-          ? Center(
+          ? const Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(
                     Icons.people,
                     size: 50,

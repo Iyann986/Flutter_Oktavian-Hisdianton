@@ -9,7 +9,7 @@ class GalleryPage extends StatefulWidget {
 }
 
 class _GalleryPageState extends State<GalleryPage> {
-  List<String> _images = [
+  final List<String> _images = [
     'https://picsum.photos/200',
     'https://picsum.photos/201',
     'https://picsum.photos/202',
@@ -26,7 +26,7 @@ class _GalleryPageState extends State<GalleryPage> {
     showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
-          return Container(
+          return SizedBox(
             height: 300,
             child: Center(
               child: Column(
@@ -34,7 +34,7 @@ class _GalleryPageState extends State<GalleryPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.network(imageUrl),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -42,7 +42,7 @@ class _GalleryPageState extends State<GalleryPage> {
                           arguments: {'imageUrl': imageUrl});
                       _showDialog(imageUrl);
                     },
-                    child: Text('View Full Size'),
+                    child: const Text('View Full Size'),
                   )
                 ],
               ),
@@ -56,15 +56,15 @@ class _GalleryPageState extends State<GalleryPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('View Full Size'),
+            title: const Text('View Full Size'),
             content: Image.network(imageUrl),
             actions: [
               TextButton(
                   onPressed: () => Navigator.pop(context, true),
-                  child: Text('No')),
+                  child: const Text('No')),
               TextButton(
                   onPressed: () => Navigator.pop(context, false),
-                  child: Text('Yes')),
+                  child: const Text('Yes')),
             ],
           );
         });
@@ -78,11 +78,11 @@ class _GalleryPageState extends State<GalleryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Gallery'),
+        title: const Text('My Gallery'),
         centerTitle: true,
       ),
       body: GridView.builder(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 10,

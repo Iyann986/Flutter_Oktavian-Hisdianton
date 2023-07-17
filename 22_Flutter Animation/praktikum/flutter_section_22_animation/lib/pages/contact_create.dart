@@ -48,8 +48,8 @@ class _ContactCreateState extends State<ContactCreate> {
                   const SizedBox(
                     height: 10,
                   ),
-                  Column(
-                    children: const [
+                  const Column(
+                    children: [
                       Text(
                         'Create New Contacts',
                         style: TextStyle(

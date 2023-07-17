@@ -48,8 +48,8 @@ class _ContactCreateState extends State<ContactCreate> {
                   const SizedBox(
                     height: 10,
                   ),
-                  Column(
-                    children: const [
+                  const Column(
+                    children: [
                       Text(
                         'Create New Contacts',
                         style: TextStyle(
@@ -58,7 +58,7 @@ class _ContactCreateState extends State<ContactCreate> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Text(
                           'A dialog is a type of modal window that appears in front of app content to provide critical information, or prompt for a decision to be made. ',
                           style: TextStyle(
@@ -82,7 +82,7 @@ class _ContactCreateState extends State<ContactCreate> {
                   Material(
                     shadowColor: Colors.black54,
                     elevation: 5,
-                    borderRadius: BorderRadius.all(
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(20),
                     ),
                     child: TextFormField(
@@ -112,7 +112,7 @@ class _ContactCreateState extends State<ContactCreate> {
                   Material(
                     shadowColor: Colors.black,
                     elevation: 5,
-                    borderRadius: BorderRadius.all(
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(20),
                     ),
                     child: TextFormField(

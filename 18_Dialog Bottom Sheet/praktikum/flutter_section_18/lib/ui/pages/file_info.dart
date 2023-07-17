@@ -1,6 +1,3 @@
-import 'dart:io';
-import 'package:file_picker/file_picker.dart';
-import 'package:mime_type/mime_type.dart';
 
 class FileInfo {
   final String path;
@@ -28,7 +25,7 @@ class FileTypeHelper {
 
   static String? lookupMimeType(String filePath) {
     final mimeType = mimeTypeMap[filePath.split('.').last.toLowerCase()];
-    return mimeType ?? null;
+    return mimeType;
   }
 
   static final Map<String, String> mimeTypeMap = {

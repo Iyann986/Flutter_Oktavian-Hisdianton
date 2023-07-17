@@ -48,9 +48,9 @@ class _GridViewAppState extends State<GridViewApp> {
         ),
       ),
       body: GridView.builder(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         itemCount: icons.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
           childAspectRatio: 1.0,
           mainAxisSpacing: 50.0,
